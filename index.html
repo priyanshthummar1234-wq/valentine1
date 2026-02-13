@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For You Bansiii ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+      <text y='0.9em' font-size='90'>🌼</text>
+    </svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Intro Screen -->
+<div id="intro">
+  <div class="intro-heart">❤️</div>
+  <h1>For someone special… 🙈❤️</h1>
+</div>
+
+<!-- Screen 1 -->
+<div class="screen" id="s1">
+  <div class="card">
+    <h1>Hello my dear ❤️</h1>
+    <p style="margin-top:10px">Tap on Start to continue</p>
+    <button class="btn" onclick="next()">Let's Start 🥳</button>
+  </div>
+</div>
+
+<!-- Screen 2 -->
+<div class="screen hidden" id="s2">
+  <div class="card">
+    <p>Countdown to something special… 👀</p>
+    <h2 id="countdown" style="margin-top:15px"></h2>
+  </div>
+</div>
+
+<!-- Screen 3 -->
+<div class="screen hidden" id="s3">
+  <div class="card">
+    <p>I wanted you to see these 📸</p>
+
+    <img src="" class="photo" id="photo" alt="Our memories ❤️" style="display:block">
+
+    <div style="margin-top:15px">
+      <button class="btn" onclick="prevPhoto()">Prev</button>
+      <button class="btn" onclick="nextPhoto()">Next</button>
+    </div>
+
+    <button class="btn" id="continueBtn" onclick="next()" style="display:none;margin-top:15px">
+      Continue 🤗
+    </button>
+  </div>
+</div>
+
+<!-- Screen 30 (Valentine Week Countdown Intro) -->
+<div class="screen hidden" id="s30">
+  <div class="card">
+    <h1>Let me show you all the days 😘</h1>
+    <h2 id="valentineCountdown" style="margin-top:18px"></h2>
+  </div>
+</div>
+
+<!-- Valentine Week Screens -->
+
+<div class="screen hidden" id="s31">
+  <div class="card">
+    <h1>🌹 Rose Day</h1>
+    <p>7 Feb</p>
+    <p style="margin-top:12px">
+      Red for love ❤️<br>
+      Yellow for friendship 💛<br>
+      White for peace 🤍
+    </p>
+    <button class="btn" onclick="next()">Next 💕</button>
+  </div>
+</div>
+
+<div class="screen hidden" id="s32">
+  <div class="card">
+    <h1>💍 Propose Day</h1>
+    <p>8 Feb</p>
+    <p style="margin-top:12px">
+      The day to confess feelings<br>
+      and make things official 🥺
+    </p>
+    <button class="btn" onclick="next()">Next 💕</button>
+  </div>
+</div>
+
+<div class="screen hidden" id="s33">
+  <div class="card">
+    <h1>🍫 Chocolate Day</h1>
+    <p>9 Feb</p>
+    <p style="margin-top:12px">
+      Sweet chocolates<br>
+      for a sweeter bond 💖
+    </p>
+    <button class="btn" onclick="next()">Next 💕</button>
+  </div>
+</div>
+
+<div class="screen hidden" id="s34">
+  <div class="card">
+    <h1>🧸 Teddy Day</h1>
+    <p>10 Feb</p>
+    <p style="margin-top:12px">
+      A teddy to say<br>
+      “I’m always here” 🤗
+    </p>
+    <button class="btn" onclick="next()">Next 💕</button>
+  </div>
+</div>
+
+<div class="screen hidden" id="s36">
+  <div class="card">
+    <h1>🤝 Promise Day</h1>
+    <p>11 Feb</p>
+    <p style="margin-top:12px">
+      Promises that matter,<br>
+      promises that last 💍
+    </p>
+    <button class="btn" onclick="next()">Next 💕</button>
+  </div>
+</div>
+
+<div class="screen hidden" id="s37">
+  <div class="card">
+    <h1>🤗 Hug Day</h1>
+    <p>12 Feb</p>
+    <p style="margin-top:12px">
+      A warm hug to say<br>
+      “You’re safe with me” 🫶
+    </p>
+    <button class="btn" onclick="next()">Next 💕</button>
+  </div>
+</div>
+
+<div class="screen hidden" id="s38">
+  <div class="card">
+    <h1>💋 Kiss Day</h1>
+    <p>13 Feb</p>
+    <p style="margin-top:12px">
+      A kiss that says<br>
+      what words can’t 😘
+    </p>
+    <button class="btn" onclick="next()">Next ❤️</button>
+  </div>
+</div>
+
+<!-- Screen 34v (Video Incoming) -->
+<div class="screen hidden" id="s34v">
+  <div class="card">
+    <h2>🎬 One more thing…</h2>
+    <p style="margin-top:12px">
+      I want you to feel this moment ❤️
+    </p>
+    <button class="btn" onclick="next()" style="margin-top:18px">
+      I’m ready 😌
+    </button>
+  </div>
+</div>
+
+<!-- Screen 3.5 (Video) -->
+<div class="screen hidden" id="s35">
+  <div class="card">
+    <p>I wanted you to feel this moment 🎥</p>
+
+    <video
+      id="memoryVideo"
+      class="video"
+      autoplay
+      loop
+      src="Video1.mp4"
+      controls
+      playsinline
+    ></video>
+
+    <button class="btn" onclick="next()" style="margin-top:15px">
+      Continue 😇
+    </button>
+  </div>
+</div>
+
+<!-- Screen 35A -->
+<div class="screen hidden" id="s35a">
+  <div class="card">
+    <p>One more memory for you 💕</p>
+
+    <video
+      id="video2"
+      class="video"
+      src="Video2.mp4"
+      controls
+      playsinline
+    ></video>
+
+    <button class="btn" onclick="next()" style="margin-top:15px">
+      Continue ❤️
+    </button>
+  </div>
+</div>
+
+<!-- Screen 35B -->
+<div class="screen hidden" id="s35b">
+  <div class="card">
+    <p>This one makes me smile 🥺</p>
+
+    <video
+      id="video3"
+      class="video"
+      src="Video3.mp4"
+      controls
+      playsinline
+    ></video>
+
+    <button class="btn" onclick="next()" style="margin-top:15px">
+      Continue ❤️
+    </button>
+  </div>
+</div>
+
+<!-- Screen 35C -->
+<div class="screen hidden" id="s35c">
+  <div class="card">
+    <p>Can we replay this forever? 💫</p>
+
+    <video
+      id="video4"
+      class="video"
+      src="Video4.mp4"
+      controls
+      playsinline
+    ></video>
+
+    <button class="btn" onclick="next()" style="margin-top:15px">
+      Continue ❤️
+    </button>
+  </div>
+</div>
+
+<!-- Screen 35D -->
+<div class="screen hidden" id="s35d">
+  <div class="card">
+    <p>This one… means a lot to me 💖</p>
+
+    <video
+      id="video5"
+      class="video"
+      src="Video5.mp4"
+      controls
+      playsinline
+    ></video>
+
+    <button class="btn" onclick="next()" style="margin-top:15px">
+      Continue ❤️
+    </button>
+  </div>
+</div>
+
+<!-- Screen 4 -->
+<div class="screen hidden" id="s4">
+  <div class="card">
+    <p>I wrote something for you 💌</p>
+    <button class="btn" onclick="openLetter()">Open letters</button>
+  </div>
+</div>
+
+<!-- Letter Popup -->
+<div id="letter">
+  <div class="card">
+    <h2>My Letters 💌</h2>
+
+    <p id="letterText" style="margin-top:10px"></p>
+
+    <div style="margin-top:15px">
+      <button class="btn" onclick="prevLetter()">Prev</button>
+      <button class="btn" onclick="nextLetter()">Next</button>
+    </div>
+
+    <button
+      class="btn"
+      id="letterContinueBtn"
+      onclick="closeLetter()"
+      style="display:none;margin-top:15px">
+      Continue 🤍
+    </button>
+  </div>
+</div>
+
+<!-- Screen 4.5 (Final Countdown) -->
+<div class="screen hidden" id="s45">
+  <div class="card">
+    <p>I really want to ask you something… 👀</p>
+    <h2 id="finalCountdown" style="margin-top:15px"></h2>
+  </div>
+</div>
+
+<!-- Screen 5 -->
+<div class="screen hidden" id="s5">
+  <div class="card">
+    <h1>
+      Bansiii… 💖 <br><br>
+    </h1>
+    <h3>
+      Will you be my valentine? <br><br>
+      Sirf ek din ke liye nahi,
+      har feeling, har moment ke liye 🥺
+    </h3>
+    <button class="btn" onclick="yes()">Yes 😍</button>
+    <button class="btn" id="noBtn">No 😢</button>
+  </div>
+</div>
+
+<!-- Celebration Overlay -->
+<div id="celebration">
+  <div class="celebrate-text">YAYYYY 🎉💖</div>
+</div>
+
+<!-- Music -->
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
